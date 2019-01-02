@@ -12,9 +12,19 @@
     <name>banish-service</name>
     <description>Demo project for Spring Boot</description>
     <packaging>jar</packaging>
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.yy.design</groupId>
+            <artifactId>banish-util</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.yy.design</groupId>
+            <artifactId>banish-dal</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 
 

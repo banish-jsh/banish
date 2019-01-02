@@ -12,8 +12,5 @@
     <name>banish-util</name>
     <description>Demo project for Spring Boot</description>
     <packaging>jar</packaging>
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
 
 </project>
