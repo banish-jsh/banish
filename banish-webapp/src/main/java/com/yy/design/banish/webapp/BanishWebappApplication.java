@@ -1,4 +1,4 @@
-package com.yy.design.banishwebapp;
+package com.yy.design.banish.webapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

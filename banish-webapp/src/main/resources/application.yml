@@ -1,0 +1,42 @@
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/banish?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull
+      username: root
+      password: 123456
+      # 使用druid数据源
+      driver-class-name: com.mysql.jdbc.Driver
+      connectionProperties: config.decrypt=false
+      filter:
+        config:
+          enabled: true
+      maxActive: 20
+      initialSize: 1
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+
+mybatis:
+  mapperLocations: classpath*:com/yy/design/banish/dao/mapper/**/*Mapper*.xml
+  typeAliasesPackage: com.yy.design.banish.dao.mapper
+
+server:
+  port: 8080
+
+multipart:
+  maxFileSize: 20MB
+  maxRequestSize: 50MB
+
+
+
+
+
+
+
